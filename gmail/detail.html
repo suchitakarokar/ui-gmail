@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/Gmail.svg" rel="icon">
+  <link href="assets/img/Gmail.svg" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="bg_tv">
+
+  <!-- ======= header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <i class="bi bi-list toggle-sidebar-btn"></i>
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/Gmail.svg" alt="">
+        <span class="">Gmail</span>
+      </a>
+    </div>
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <a><i class="bi bi-search"></i></a>
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="fas fa-times"></i> &nbsp;<i class="fas fa-sliders-h"></i></button>
+      </form>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle activ_bg" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-circle"></i> &nbsp; Active
+            </button>
+            <ul class="dropdown-menu notifications dropdown-menu-arrow py-3">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex dot_b">
+                    <i class="fas fa-circle"></i>
+                    <div class="auto_b">
+                      <p>Automatic</p>
+                      <p class="fs-8 text-secodary">Based o Activity</p>
+                    </div>
+                    <div class="righ text-black">
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </a>
+            </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex dot_min">
+                    <i class="fas fa-minus-circle"></i>
+                    <div class="auto_b">
+                      <p>Do not distrb</p>
+                      <p class="fs-6 text-secodary">mute chat notifications</p>
+                    </div>
+                  </div>
+                </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Set as away
+                  </label>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <div class="d-flex dot_pen">
+                  <i class="fas fa-pencil-alt"></i>
+                  <div class="">
+                    <p>Add a Status</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <div class="d-flex dot_b">
+                  <div class="">
+                    <p class="ms-4">Chat notifications setting</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            </ul>
+          </div>
+        </li>
+      
+        <li class="nav-item d-block d-lg-none ps-4">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="far fa-question-circle"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="notification-item">
+              Help
+          </li>
+            <li class="notification-item">
+                Training
+            </li>
+            <li class="notification-item">
+             Updates
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+              send feedback to Google
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="fas fa-cog"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="fas fa-th"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <span class="d-none d-md-block nxt_t"><img src="./assets/img/hexa.png"></span>
+            <img src="assets/img/messages-3.jpg" alt="Profile" class="rounded-circle">
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <aside id="sidebar" class="sidebar">
+    <li class="nav-item compose mb-3">
+      <a class="nav-link " href="#">
+        <i class="fas fa-pencil-alt"></i>
+        <span>Compose</span>
+      </a>
+    </li>
+    <!-- compose end -->
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-person"></i>
+          <span>Inbox</span>
+          <span class="nav_t">666</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="far fa-star"></i>
+          <span>Starred</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="far fa-clock"></i>
+          <span>Snoozed</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-card-list"></i>
+          <span>Sent</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Drafts</span>
+          <span class="nav_t">55</span>
+
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>more</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="far fa-bookmark"></i><span>Important</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="far fa-paper-plane"></i><span>Scheduled</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-envelope"></i><span>All Mail</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-exclamation-circle"></i><span>Spam</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-trash-alt"></i><span>Trash</span>
+            </a>
+          </li>
+          <li class="nav-item">
+              <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fas fa-caret-right"></i><i class="far fa-bookmark"></i> &nbsp; categories
+              </a>
+            <div class="collapse" id="collapseExample">
+              <div class=" card-body cat_lv">
+                <ul>
+                  <li> <a href="#"><i class="fas fa-user-friends"></i>Social</a></li>
+                  <li> <a href="#"><i class="fas fa-exclamation-circle"></i>Updates</a></li>
+                  <li> <a href="#"><i class="fas fa-comments"></i>Forums</a></li>
+                  <li> <a href="#"><i class="fas fa-tag"></i>Promotions</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i><span>Manage labels</span>
+            </a>
+          </li>
+          <li>
+            <a href="./detail.html">
+              <i class="fas fa-plus"></i><span>Create new label</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <span><i class="fas fa-window-restore"></i>Labels</span>
+        </a>
+      </li>
+    </ul>
+
+  </aside>
+
+  <main id="main" class="main ">
+    <div class="d-flex step_p mb-2 ms-4">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-comment-alt-slash"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-trash-alt"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="far fa-clock"></i>
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+    <div class="d-flex mb-2 ms-4">
+        <p class="txt_tab"><i class="fas fa-envelope-open-text"></i> Lorem ipsum dolor sit amet,<span class="text-secondary fs-8">consectetur adipisicing elit. Molestiae, beatae....</span></p>
+        <i class="fas fa-comment-alt-slash"></i>
+        <i class="fas fa-arrow-alt-to-right"></i>
+    </div>
+    <div class="d-flex ms-4">
+        <div>
+            <button class="extra">External</button>
+        </div>
+        <div class="d-flex ms-4">
+            <div class="filter me-3 ">
+                <button class="check_t d-flex" href="#" data-bs-toggle="dropdown">
+                 Twitter &nbsp; <i class="fas fa-sort-down"></i></button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">This Year</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    <div class="d-flex mt-2 justify-content-between ms-4">
+        <div class="d-flex per_m">
+            <div class="d-flex">
+                <img src="./assets/img/messages-2.jpg" width="30" height="30">
+                <div class="">
+                    <p class="txt_tab"><i class="fas fa-envelope-open-text"></i> Lorem ipsum dolor sit<span class="text-secondary fs-8">consectetur adipisicing elit. Molestiae, beatae....</span></p>
+                    <div class="d-flex">
+                        <div class="filter me-3 tome">
+                            <button class="check_t d-flex" href="#" data-bs-toggle="dropdown">
+                            To me &nbsp; <i class="fas fa-sort-down"></i></button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                            <li><a class="dropdown-item" href="#">Today</a></li>
+                            <li><a class="dropdown-item" href="#">This Month</a></li>
+                            <li><a class="dropdown-item" href="#">This Year</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex time_p">
+            <p>1.46 PM hourse ago</p>
+            <i class="far fa-star"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </div>
+    <div class="detail_pg">
+        <div class="card leter">
+            <div class="strapi">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex"><img src="./assets/img/product-5.jpg" width="30" height="30"><p>strapi</p></div>
+                    <div class=""><p>Matercipate | strapi cloud</p></div>
+                </div>
+                <div class=" text-white d-flex justify-content-center mr-auto">
+                    <img src="./assets/img/product-5.jpg" width="40" height="40"><p>Strapi</p>
+                </div>
+            </div>
+            <h3 class="text-center">Strapi News</h3>
+            <p class="text-start text-primary  mb-3">hello Swapil<i class="fas fa-hands-helping"></i></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto fuga deleniti non maiores labore veniam voluptatibu</p>
+            <ul>
+                <li>
+                    1.<a href="bild better wester with remix with kent"></a><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto fuga deleniti non maiores labore veniam voluptatibu
+                    </span>
+                </li>
+                <li>
+                    2.<a href="bild better wester with remix with kent"></a><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto fuga deleniti non maiores labore veniam voluptatibu
+                    </span>
+                </li>
+                <li>
+                    3.<a href="bild better wester with remix with kent"></a><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto fuga deleniti non maiores labore veniam voluptatibu
+                    </span>
+                </li>
+            </ul>
+            <div class="d-flex mr-auto justify-content-center read">
+                <button>Read more</button>
+            </div>
+            <hr class="dropdown-divider">
+            <div class="">
+                <h3 class="fw-bold text-center">Community & Ecosystem</h3>
+            </div>
+            <div class="tweet">
+                <h3 class="text-center pt-2">Tweet of the Week</h3>
+                <div class="bg_vr">
+                    <div class="d-flex strip">
+                        <img src="./assets/img/messages-2.jpg" width="30" height="30">
+                        <div class="alex">
+                            <p class="text-black">Alex</p>
+                            <p class="text-secondary">lorem ipsum</p>
+                        </div>
+                    </div>
+                    <h3 class="text-black">strip cloud been is the detail I' ve been waiting for this for a wile !</h3>
+                </div>
+            </div>
+
+              <div class="">
+                <div class="d-flex strip">
+                    <img src="./assets/img/messages-2.jpg" width="30" height="30">
+                    <div class="alex">
+                        <p class="text-black">Alex</p>
+                        <p class="text-secondary">lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="d-flex mr-auto justify-content-center social mb-2">
+                  <a href="" class="git"><i class="fab fa-github"></i></a>
+                  <a href="" class="twit"><i class="fab fa-twitter-square"></i></a>
+                  <a href="" class="inst"><i class="fab fa-instagram"></i></a>
+                  <a href="" class="face"><i class="fab fa-facebook-square"></i></a>
+                  <a href="" class="linkd"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="text-center">
+                    <div class="">
+                      <div class="d-flex justify-content-center mr-auto"><img src="./assets/img/product-5.jpg" width="40" height="40"><p>Strapi</p>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> fugit a pariatur voluptatem excepturi ex quas.</p>
+                   </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="ms-4">
+      <p>[ Message Clipped] <a href="#">View entire message</a></p>
+    </div>
+    <div class="d-flex got ms-4">
+      <img src="./assets/img/messages-3.jpg" width="30" height="30">
+      <div class="card text_chat">
+        <div class="d-flex justify-content-between">
+          <p><i class="fas fa-reply"></i>Lorem ipsum dolor sit amet consectetur.</p>
+          <i class="fas fa-camera"></i>
+        </div>
+        <p class="">This is a  text editor</p>
+
+        <div class="mt-4">
+           <div class="d-flex boxig my-2">
+            <ul class="d-flex store">
+              <li class="mt-1"><i class="fas fa-reply"></i></li>
+              <li class="mt-1"><i class="fas fa-share"></i></li>
+              <li>
+                <div class="dropdown top_br">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sans Serif
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown top_br">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-text-height"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mt-1">
+                <i class="fas fa-bold"></i>
+              </li>
+              <li class="mt-1"><i class="fas fa-italic"></i>
+              </li>
+              <li class="mt-1"><i class="fas fa-underline"></i>
+              </li>
+              <li class="mb-1">
+                <div class="dropdown top_br pb-4">
+                  <button class="btn btn-secondary dropdown-toggle mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fab fa-autoprefixer"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown top_br">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-outdent"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mt-1"> <i class="fas fa-align-justify"></i>
+              </li>
+              <li class="mt-1"><i class="fas fa-align-left"></i>
+              </li>
+              <li class="mt-1"><i class="fas fa-quote-right"></i>
+              </li>
+            </ul>
+           </div>
+        </div>
+        <div class="d-flex justify-content-between mr-auto">
+          <div class="d-flex">
+              <div class="">
+                 <button class="send">Send</button>
+              </div>
+              <ul class="d-flex store">
+                <li><i class="fas fa-camera-retro"></i></li>
+                <li>
+                  <div class="dropdown top_br lv_d">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fab fa-autoprefixer"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="fas fa-smile-beam"></i></li>
+                <li><i class="fab fa-google-drive"></i></li>
+                <li><i class="fas fa-image"></i></li>
+                <li><i class="fas fa-unlock-alt"></i></li>
+                <li></li>
+              </ul>
+          </div>
+          <div class="">
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
